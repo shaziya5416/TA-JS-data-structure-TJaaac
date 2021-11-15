@@ -24,10 +24,10 @@ let newUser = user;
 - `user.name == newUser.name;`//true
 - `user.sibling == newUser.sibling;`//true
 - `user.sibling === newUser.sibling;`//true
-- `user.sibling == allBrothers;`//true
+- `user.sibling == allBrothers;`//fdalse
 - `user.sibling === allBrothers;`//false
 - `brothersCopy === allBrothers;`//false
-- `brothersCopy == allBrothers;`//true
+- `brothersCopy == allBrothers;`//false beacuse no same address no matter double equal tos or single equal tos
 - `brothersCopy == user.sibling;`//true
 - `brothersCopy === user.sibling;`//true
 - `brothersCopy[0] === user.sibling[0];`//true
