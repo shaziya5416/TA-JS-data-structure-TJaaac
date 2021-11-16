@@ -197,8 +197,7 @@ let clonedPerson={... person,input:{...person}.output:{...person}};
 
 ```js
 function cloneObject(a) {
-  let b={... a};
-return b;
+  JSON.parse(JSON.stringify(a));
 }
 
 // Run the test below to check your function
