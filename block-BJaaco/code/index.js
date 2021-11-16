@@ -3,10 +3,22 @@ let numbers = [6, 8, 10, 12, 43, 56, 98];
 let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
-
+let collection=[6,8,10,13,43,56,98,1230,234,1278,984,763,900];
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
+let evencollection=[];
+for (let numbers of collection){
+if (numbers%2==0){
+evencollection.push(numbers)
+}
+}
 
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
+let oddcollection=[];
+for (let numbers of collection){
+if (numbers%2!=0){
+oddcollection.push(numbers)
+}
+}
 
 /*
   @param means parameter
@@ -24,8 +36,12 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times() {
-  // Your code
+function times(number,string) {
+let time=[]; 
+for (i=1;i<=number;i++){
+time.push(string)
+}
+return time;
 }
 
 // Uncomment the code below and test the output
@@ -48,10 +64,15 @@ function times() {
     revert(['Ryan', 'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function revert() {
-  // your code
+function revert(a,b,c,d) {
+let answer=[a,b,c,d];
+let revert1=[];
+for (i=0;i<answer.length;i++){
+revert1[i]=revert1[answer.length-1-i];
+answer.push(revert1);
 }
-
+return revert1;
+}
 // Uncomment the code below and test the output
 // console.log(revert([1, 2, 3, 4])); // [4, 3, 2, 1]
 // console.log(revert(['a', 'd', 'c', 'b'])); // ['b', 'c', 'd', 'a']
@@ -93,8 +114,8 @@ function clear() {
     arrayToObj(['Ryan', 'John']); // {0: 'Ryan', 1: 'John'}
 */
 
-function arrayToObj() {
-  // your code
+function arrayToObj(a) {
+let obj={ };
 }
 
 // Uncomment the code below and test the output
